@@ -10,7 +10,7 @@ def register(cb):
 
 
 class AnimalsMod(loader.Module):
-	"""Фото животных из @LaciaMemeFrame_bot"""
+	"""Фото животных из @pixelsetup_bot"""
 
 	strings = {'name': 'Животные'}
 
@@ -34,16 +34,16 @@ class AnimalsMod(loader.Module):
              self_mess = True
              if not user_msg:
                  return 
-         chat = '@LaciaMemeFrame_bot'
+         chat = '@pixelsetup_bot'
          await event.edit('<code>Обработка</code>')
          async with event.client.conversation(chat) as conv:
              try:
                  response = conv.wait_event(events.NewMessage(incoming=True,
-                                                              from_users=1171589586))
+                                                              from_users=787358569))
                  await event.client.send_message(chat, '/cat')
                  response = await response
              except YouBlockedUserError:
-                 await event.reply('<code>Разблокируй @LaciaMemeFrame_bot</code>')
+                 await event.reply('<code>Разблокируй @pixelsetup_bot</code>')
                  return
              await event.delete()
              await event.client.send_file(event.to_id, response.media)
@@ -58,16 +58,16 @@ class AnimalsMod(loader.Module):
              self_mess = True
              if not user_msg:
                  return 
-         chat = '@LaciaMemeFrame_bot'
+         chat = '@pixelsetup_bot'
          await event.edit('<code>Обработка</code>')
          async with event.client.conversation(chat) as conv:
              try:
                  response = conv.wait_event(events.NewMessage(incoming=True,
-                                                              from_users=1171589586))
+                                                              from_users=787358569))
                  await event.client.send_message(chat, '/dog')
                  response = await response
              except YouBlockedUserError:
-                 await event.reply('<code>Разблокируй @LaciaMemeFrame_bot</code>')
+                 await event.reply('<code>Разблокируй @pixelsetup_bot</code>')
                  return
              await event.delete()
              await event.client.send_file(event.to_id, response.media)  
