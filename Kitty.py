@@ -40,7 +40,7 @@ class AnimalsMod(loader.Module):
              try:
                  response = conv.wait_event(events.NewMessage(incoming=True,
                                                               from_users=787358569))
-                 await event.client.send_message(chat, '/cat')
+                 await event.client.send_message(chat, '/kitty')
                  response = await response
              except YouBlockedUserError:
                  await event.reply('<code>Разблокируй @pixelsetup_bot</code>')
@@ -64,7 +64,7 @@ class AnimalsMod(loader.Module):
              try:
                  response = conv.wait_event(events.NewMessage(incoming=True,
                                                               from_users=787358569))
-                 await event.client.send_message(chat, '/dog')
+                 await event.client.send_message(chat, '/dogs')
                  response = await response
              except YouBlockedUserError:
                  await event.reply('<code>Разблокируй @pixelsetup_bot</code>')
